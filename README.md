@@ -1,3 +1,6 @@
+
+![alt text](https://github.com/eformat/microprofile-holloswarm-example/blob/master/image/The-Skinny-on-Fat-Thin-Hollow-and-Uber-300x225.png "holloswarm skinny")
+
 # Build
 ```
 mvn clean package && docker build -t com.foo/foo .
