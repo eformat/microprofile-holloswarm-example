@@ -35,6 +35,10 @@ curl localhost:8080/app/foo
 ~/src/apache-jmeter-3.3/bin/jmeter.sh &
 ```
 
+```
+docker history --no-trunc com.foo/foo
+```
+
 # OpenShift
 ```
 oc new-project my-foo --display-name='My Foo' --description='My Foo'
