@@ -1,6 +1,11 @@
 
 ![alt text](https://github.com/eformat/microprofile-holloswarm-example/blob/master/image/The-Skinny-on-Fat-Thin-Hollow-and-Uber-300x225.png "holloswarm skinny")
 
+# Start
+```
+mvn archetype:generate -Dfilter=com.airhacks:javaee8-essentials-archetype
+```
+
 # Build
 ```
 mvn clean package && docker build -t com.foo/foo .
@@ -17,9 +22,17 @@ wget http://repo2.maven.org/maven2/org/wildfly/swarm/servers/microprofile/2017.9
 java -jar microprofile-2017.9.5-hollowswarm.jar -Djava.rmi.server.hostname=127.0.0.1 target/foo.war
 ```
 
-# Test
+# Test & Meter
 ```
 curl localhost:8080/app/foo
+```
+
+```
+/usr/local/java/jdk1.8.0_144/bin/jvisualvm
+```
+
+```
+~/src/apache-jmeter-3.3/bin/jmeter.sh &
 ```
 
 # OpenShift
